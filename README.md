@@ -39,7 +39,7 @@ Navigate to the following location to download the pre-trained LEC weights.
 
 bradyz--> Projects --> 2020_carla_challenge_lbc --> Runs --> command_coefficient=0.01_sample_by=even_stage2 --> Files
 
-Alternately, the weights can be downloaded from [here]()
+Alternately, the weights can be downloaded from [here](https://vanderbilt365-my.sharepoint.com/:u:/g/personal/shreyas_ramakrishna_vanderbilt_edu/ETRBzI7Ai3VJt9zL7yPnJO4Bi5zYvgggreiY2CG68f8s8A?e=nGJIQl)
 
 Save the epoch=24.ckpt file to resonate-carla/carla_project folder. 
 
@@ -47,7 +47,7 @@ Save the epoch=24.ckpt file to resonate-carla/carla_project folder.
 #### Download the pre-trained B-VAE assurance monitor weights
 The B-VAE assurance monitor is designed to detect adversities in the environment such as excessive brightness. 
 
-Download the weights from https://vanderbilt365-my.sharepoint.com/:u:/g/personal/shreyas_ramakrishna_vanderbilt_edu/EY5JCqsI65JEtvwMelR6OZwBPfho7FNtBOG5pDWAMXh1ng?e=7hR7pa
+Download the weights from [here](https://vanderbilt365-my.sharepoint.com/:u:/g/personal/shreyas_ramakrishna_vanderbilt_edu/EY5JCqsI65JEtvwMelR6OZwBPfho7FNtBOG5pDWAMXh1ng?e=7hR7pa)
 
 Unzip and save the weights to resonate-carla/leaderboard/team_code/detector_code
 
