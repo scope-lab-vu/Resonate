@@ -32,7 +32,7 @@ cd ${CARLA_ROOT/Carla-AD}  # Change ${CARLA_ROOT} for your CARLA root folder
 pip3 install -r PythonAPI/carla/requirements.txt
 ```
 
-# Download pre-trained Learning Enabled Component
+##### Download pre-trained Learning Enabled Component
 The preitrained LEC is got from [Learning By Cheating](https://github.com/bradyz/2020_CARLA_challenge). Download epoch=24.ckpt file from [Wandb.ai](https://wandb.ai/bradyz/2020_carla_challenge_lbc/runs/command_coefficient=0.01_sample_by=even_stage2/files?workspace=user-)
 
 Navigate to the following location to download the pre-trained LEC weights. 
@@ -41,7 +41,7 @@ bradyz--> Projects --> 2020_carla_challenge_lbc --> Runs --> command_coefficient
 
 Save the epoch=24.ckpt file to resonate-carla/carla_project folder. 
 
-# Download the pre-trained B-VAE assurance monitor weights
+#### Download the pre-trained B-VAE assurance monitor weights
 The B-VAE assurance monitor is designed to detect adversities in the environment such as excessive brightness. 
 
 Download the weights from https://vanderbilt365-my.sharepoint.com/:u:/g/personal/shreyas_ramakrishna_vanderbilt_edu/EY5JCqsI65JEtvwMelR6OZwBPfho7FNtBOG5pDWAMXh1ng?e=7hR7pa
@@ -65,5 +65,13 @@ export HAS_DISPLAY=1                                        # set to 0 if you do
 
 ./run_agent.sh
 ```
+
+# Acknowledgement 
+
+This work was supported by the DARPA Assured Autonomy project and Air Force Research Laboratory. The views presented in this paper are those of the authors and do not reflect the opinion or endorsement of DARPA or ARFL.
+
+# License
+
+This repo is released under the MIT License (please refer to the LICENSE file for details). PythonAPI for the CARLA setup was borrowed from the [CARLA Leaderboard challange repo](https://leaderboard.carla.org/), which is under MIT license. Also several python scripts including the LEC driving agent was borrowed from dotchen's [Learning by cheating repo](https://github.com/dotchen/LearningByCheating) which is released under MIT license.
 
 
