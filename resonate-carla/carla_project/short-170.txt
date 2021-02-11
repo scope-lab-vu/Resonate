@@ -1,0 +1,103 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.11045579446906524,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.11045579446906524,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "exceptions": [
+                    [
+                        "RouteScenario_0",
+                        0,
+                        "Failed"
+                    ]
+                ]
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 44.57295886824906,
+                "score_penalty": 0.6,
+                "score_route": 74.2882647804151
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.tesla.model3 and id=3860 at (x=234.382, y=24.814, z=0.043)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 53.0500007905066,
+                    "duration_system": 144.188871383667,
+                    "route_length": 121.86844845278611
+                },
+                "route_id": "RouteScenario_0",
+                "scores": {
+                    "score_composed": 44.57295886824906,
+                    "score_penalty": 0.6,
+                    "score_route": 74.2882647804151
+                },
+                "status": "Failed"
+            }
+        ]
+    },
+    "labels": [
+        "collisions",
+        "collisions_layout",
+        "collisions_pedestrians",
+        "collisions_vehicles",
+        "precipitation",
+        "precipitation_deposits",
+        "cloudiness"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_camera",
+        "carla_camera",
+        "carla_imu",
+        "carla_radar",
+        "carla_gnss",
+        "carla_speedometer"
+    ],
+    "values": [
+        "44.573",
+        "74.288",
+        "0.600",
+        "0.000",
+        "0.000",
+        "0.110",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.110",
+        "0.000",
+        "0.000"
+    ]
+}

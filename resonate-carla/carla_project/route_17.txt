@@ -1,0 +1,13 @@
+{
+    "_checkpoint": {
+        "global_record": {},
+        "progress": [
+            1,
+            1
+        ],
+        "records": []
+    },
+    "labels": [],
+    "sensors": [],
+    "values": []
+}

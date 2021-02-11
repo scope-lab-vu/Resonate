@@ -1,0 +1,10 @@
+Version: 1
+Map: Town03
+Date: 01/28/21 14:42:10
+
+    Time  Types     Id Actor 1                                 Id Actor 2                            
+      29   v v    1035 vehicle.lincoln.mkz2017               1051 vehicle.nissan.patrol              
+      30   v v    1035 vehicle.lincoln.mkz2017               1051 vehicle.nissan.patrol              
+
+Frames: 1194
+Duration: 60 seconds

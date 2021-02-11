@@ -1,0 +1,5 @@
+# Don't commit any of the raw data
+estimation_data/
+example_data/
+results_data/
+saved_images/

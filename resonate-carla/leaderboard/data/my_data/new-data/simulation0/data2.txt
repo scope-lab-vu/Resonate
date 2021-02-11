@@ -1,0 +1,10 @@
+Version: 1
+Map: Town03
+Date: 01/28/21 14:46:19
+
+    Time  Types     Id Actor 1                                 Id Actor 2                            
+      25   v v    1251 vehicle.lincoln.mkz2017               1339 vehicle.tesla.cybertruck           
+      33   v v    1251 vehicle.lincoln.mkz2017               1319 vehicle.dodge_charger.police       
+
+Frames: 1282
+Duration: 64 seconds

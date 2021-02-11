@@ -1,0 +1,4 @@
+avg. total score,avg. route score,avg. infraction penalty,collisions with layout,collisions with pedestrians,collisions with vehicles,off-road infractions,red lights infractions,route deviation infractions,stop sign infractions,timeouts,vehicle blocked
+20.000,33.333,0.200,0.000,0.000,0.018,0.000,0.000,0.000,0.000,0.000,0.000
+40.000,66.667,0.400,0.000,0.000,0.037,0.000,0.000,0.000,0.000,0.000,0.000
+52.000,100.000,0.520,0.000,0.000,0.074,0.000,0.000,0.000,0.000,0.000,0.000

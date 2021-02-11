@@ -1,0 +1,106 @@
+//Each CARLA scene is defined interms of the town, weather pattern, Route,
+// ego_agent and other_agents. Each of these are described as a entities in the
+// scenario description language
+
+type string
+type int
+
+// Town description can have id and map
+entity town_description {
+    id: string
+    map: string
+}
+
+// Weather description that can be varied in Carla
+entity weather_description {
+cloudiness: string
+precipitation: uniform
+precipitation_deposits: uniform
+wind_intensity: string
+sun_azimuth_angle: string
+sun_altitude_angle: string
+wetness: string
+fog_distance: string
+fog_density: string
+}
+
+// Global Route has multiple route_descriptions
+entity global_route{
+waypoint1: route_description
+waypoint2: route_description
+waypoint3: route_description
+waypoint4: route_description
+waypoint5: route_description
+waypoint6: route_description
+waypoint7: route_description
+waypoint8: route_description
+waypoint9: route_description
+waypoint10: route_description
+waypoint11: route_description
+waypoint12: route_description
+waypoint13: route_description
+waypoint14: route_description
+waypoint15: route_description
+}
+
+// Ego agent description
+entity ego_agent{
+model: string
+color: string
+rolename: string
+position: route_description
+}
+
+// Other agents description
+entity other_agent{
+model: string
+color: string
+rolename: string
+position: route_description
+}
+
+// The Carla AD challenge has 10 traffic scenarios.
+// Each of these traffic scenarios can be an hazard to the ego_vehicle.
+entity Hazard_list{
+hazard1: traffic_scenario
+hazard2: traffic_scenario
+hazard3: traffic_scenario
+hazard4: traffic_scenario
+hazard5: traffic_scenario
+hazard6: traffic_scenario
+hazard7: traffic_scenario
+hazard8: traffic_scenario
+hazard9: traffic_scenario
+hazard10: traffic_scenario
+}
+
+// A traffic_scenario is defined by a set of way points.
+// When the vehicles way points match the hazard way points, the hazard gets activated
+entity traffic_scenario{
+waypoint1: route_description
+waypoint2: route_description
+waypoint3: route_description
+waypoint4: route_description
+waypoint5: route_description
+waypoint6: route_description
+waypoint7: route_description
+waypoint8: route_description
+waypoint9: route_description
+waypoint10: route_description
+}
+
+// Route description interms of waypoints to be followed
+entity route_description{
+pitch: string
+roll: string
+x: string
+y: string
+yaw: string
+z: string
+}
+
+// Define uniform distribution
+entity uniform{
+    low: int
+    high: int
+}

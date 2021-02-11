@@ -1,0 +1,26 @@
+EntityModel:
+    general_types*=generalType
+    entities+=Entity
+;
+
+Entity:
+  'entity' name=ID '{'
+        properties*=Property
+  '}'
+;
+
+Property:
+    name=ID ':' type=[Type]
+;
+
+Type:
+    Entity | generalType
+;
+
+generalType:
+    'type' name=ID
+;
+
+Comment:
+  /\/\/.*$/
+;

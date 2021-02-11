@@ -1,0 +1,4 @@
+avg. route score,collision,outside_route_lanes,precipitation,precipitation_deposits,cloudiness,collision_with_vehicle,collision_with_pedestrian,route_deviation,distance_travelled
+25.000,1,0.000,0.000,0.000,0.000,0.062,0.000,0.000,16.19
+50.000,1,0.000,0.000,0.000,0.000,0.185,0.000,0.000,16.19
+71.732,1,0.000,0.000,0.000,0.000,0.185,0.000,0.000,14.07

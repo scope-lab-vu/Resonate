@@ -1,0 +1,103 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.0,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "exceptions": [
+                    [
+                        "RouteScenario_17",
+                        0,
+                        "Failed"
+                    ]
+                ]
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 0.12383914753184103,
+                "score_penalty": 1.0,
+                "score_route": 0.12383914753184103
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 3.400000050663948,
+                    "duration_system": 8.907938718795776,
+                    "route_length": 891.2777891350403
+                },
+                "route_id": "RouteScenario_17",
+                "scores": {
+                    "score_composed": 0.12383914753184103,
+                    "score_penalty": 1.0,
+                    "score_route": 0.12383914753184103
+                },
+                "status": "Failed"
+            }
+        ]
+    },
+    "labels": [
+        "avg. total score",
+        "avg. route score",
+        "avg. infraction penalty",
+        "collisions with layout",
+        "collisions with pedestrians",
+        "collisions with vehicles",
+        "off-road infractions",
+        "red lights infractions",
+        "route deviation infractions",
+        "stop sign infractions",
+        "timeouts",
+        "vehicle blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_camera",
+        "carla_camera",
+        "carla_imu",
+        "carla_radar",
+        "carla_gnss",
+        "carla_speedometer"
+    ],
+    "values": [
+        "0.124",
+        "0.124",
+        "1.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

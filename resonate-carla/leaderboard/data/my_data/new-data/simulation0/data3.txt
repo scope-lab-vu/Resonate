@@ -1,0 +1,8 @@
+Version: 1
+Map: Town03
+Date: 01/28/21 14:51:26
+
+    Time  Types     Id Actor 1                                 Id Actor 2                            
+
+Frames: 1383
+Duration: 69.1 seconds
