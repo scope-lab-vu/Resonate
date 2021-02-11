@@ -39,7 +39,10 @@ Navigate to the following location to download the pre-trained LEC weights.
 
 bradyz--> Projects --> 2020_carla_challenge_lbc --> Runs --> command_coefficient=0.01_sample_by=even_stage2 --> Files
 
+Alternately, the weights can be downloaded from [here]()
+
 Save the epoch=24.ckpt file to resonate-carla/carla_project folder. 
+
 
 #### Download the pre-trained B-VAE assurance monitor weights
 The B-VAE assurance monitor is designed to detect adversities in the environment such as excessive brightness. 
