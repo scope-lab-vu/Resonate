@@ -2,13 +2,13 @@
 
 ReSonAte uses the information gathered by hazard analysis and assurance cases to build [Bow-Tie Diagrams](https://www.cgerisk.com/knowledgebase/The_bowtie_method) to model hazard propagation paths and capture their relationships with the state of the system and environment. These Bow-tie diagrams are used to synthesize graphical models that are then used at runtime along with the information gathered from prior incidents about the possible environmental hazards and the hypothesis from failure diagnosers and system runtime monitors to estimate the hazard rates at runtime. These hazard rates are then used to determine the likelihood of unsafe system-level consequences captured in the bow-tie diagram. 
 
-This repo has the steps to run the ReSonAte framework in CARLA simulator. We demonstrate the utility of the ReSonAte framework for NHTSA-inspired pre-crash scenarios that are a part of the CARLA Autonomous Driving Challange  https://carlachallenge.org/challenge/nhtsa/
+This repo has the steps to run the ReSonAte framework in the CARLA simulator. We demonstrate the utility of the ReSonAte framework for NHTSA-inspired pre-crash scenarios that are a part of the CARLA Autonomous Driving Challange  https://carlachallenge.org/challenge/nhtsa/
 
 <p align="center">
   <img src="https://github.com/Shreyasramakrishna90/AV-Runtime-Risk/blob/main/videos/readme2.gif" />
 </p>
 
-Resonate estimated collision rate as the Autonomous Vehicle navigated through a nominal CARLA scene with weather(cloud = 0.0, precipitation = 0.0, deposits = 0.0). The scene gets adverse with high brightness. The [B-VAE assurance monitor](https://ieeexplore-ieee-org.proxy.library.vanderbilt.edu/stamp/stamp.jsp?arnumber=9283847) detects the increase in brightness and its martingale increases. The Blur detectors and Occlusion detector (on left) remain low throughtout. 
+Resonate estimated collision rate as the Autonomous Vehicle navigated through a nominal CARLA scene with weather(cloud = 0.0, precipitation = 0.0, deposits = 0.0). The scene gets adverse with high brightness. The [B-VAE assurance monitor](https://ieeexplore-ieee-org.proxy.library.vanderbilt.edu/stamp/stamp.jsp?arnumber=9283847) detects the increase in brightness and its martingale increases. The Blur detectors and Occlusion detector (on left) remain low throughout. 
 
 Additional videos of other scenes can be found in the [Video Folder](https://github.com/Shreyasramakrishna90/AV-Runtime-Risk/blob/main/videos/)
 
@@ -72,6 +72,6 @@ This work was supported by the DARPA Assured Autonomy project and Air Force Rese
 
 # License
 
-This repo is released under the MIT License (please refer to the LICENSE file for details). PythonAPI for the CARLA setup was borrowed from the [CARLA Leaderboard challange repo](https://leaderboard.carla.org/), which is under MIT license. Also several python scripts including the LEC driving agent was borrowed from dotchen's [Learning by cheating repo](https://github.com/dotchen/LearningByCheating) which is released under MIT license.
+This repo is released under the MIT License (please refer to the LICENSE file for details). PythonAPI for the CARLA setup was borrowed from the [CARLA Leaderboard challenge repo](https://leaderboard.carla.org/), which is under MIT license. Also, several python scripts including the LEC driving agent was borrowed from dotchen's [Learning by cheating repo](https://github.com/dotchen/LearningByCheating) which is released under MIT license.
 
 
