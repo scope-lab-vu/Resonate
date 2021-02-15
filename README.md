@@ -5,7 +5,7 @@ ReSonAte uses the information gathered by hazard analysis and assurance cases to
 This repo has the steps to run the ReSonAte framework in the CARLA simulator. We demonstrate the utility of the ReSonAte framework for NHTSA-inspired pre-crash scenarios that are a part of the CARLA Autonomous Driving Challange  https://carlachallenge.org/challenge/nhtsa/
 
 <p align="center">
-  <img src="https://github.com/Shreyasramakrishna90/AV-Runtime-Risk/blob/main/videos/readme2.gif" />
+  <img src="https://github.com/scope-lab-vu/Resonate/blob/main/videos/adverse-scene-high-brightness-readme.gif" />
 </p>
 
 Resonate estimated collision rate as the Autonomous Vehicle navigated through a nominal CARLA scene with weather(cloud = 0.0, precipitation = 0.0, deposits = 0.0). The scene gets adverse with high brightness. The [B-VAE assurance monitor](https://ieeexplore-ieee-org.proxy.library.vanderbilt.edu/stamp/stamp.jsp?arnumber=9283847) detects the increase in brightness and its martingale increases. The Blur detectors and Occlusion detector (on left) remain low throughout. The Likelihood of a collision increases with the adverse brightness, and as expected the AV goes very close to the other vehicle stopped in front. 
