@@ -8,7 +8,7 @@ We use a scenario description DSML written in [textX](https://textx.github.io/te
 
 [scenario-generator.py](https://github.com/scope-lab-vu/Resonate/blob/main/scenario-description/scenario-generator.py) -- Parses the scenario language as python object and fills in the required values for each entity. Then an XML is generated that can be used in CARLA.
 
-[sample-output.xml](https://github.com/scope-lab-vu/Resonate/blob/main/scenario-description/sample-output.xml) -- The sample xml file generated for CARLA. 
+[sample xml files](https://github.com/scope-lab-vu/Resonate/tree/main/scenario-description/Scenario-example/simulation1) -- The sample xml files generated for CARLA. 
 
 Scenario.dot, entity.dot -- metamodel figures of the scenario description and the textual language. Read the [docs](https://textx.github.io/textX/stable/) to convert it to png.
 
