@@ -6,7 +6,7 @@ We use a scenario description DSML written in [textX](https://textx.github.io/te
 
 [entity.tx](https://github.com/Shreyasramakrishna90/Carla-Safety-Evaluation/blob/master/textx-scenario-description/demo/entity.tx) -- Has the grammer for the scenario description language. 
 
-[scenario-parser.py](https://github.com/Shreyasramakrishna90/Carla-Safety-Evaluation/blob/master/demo/textx-scenario-description/scenario-parser.py) -- Parses the scenario language as python object and fills in the required values for each entity. Then an XML is generated that can be used in CARLA.
+[scenario-generator.py](https://github.com/Shreyasramakrishna90/Carla-Safety-Evaluation/blob/master/demo/textx-scenario-description/scenario-parser.py) -- Parses the scenario language as python object and fills in the required values for each entity. Then an XML is generated that can be used in CARLA.
 
 [sample-output.xml](https://github.com/Shreyasramakrishna90/Carla-Safety-Evaluation/blob/master/demo/textx-scenario-description/sample-output.xml) -- The sample xml file generated for CARLA. 
 
