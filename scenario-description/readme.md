@@ -2,13 +2,13 @@
 
 We use a scenario description DSML written in [textX](https://textx.github.io/textX/stable/) to generate different scenes with different weather patterns. 
 
-[Scenrio.entity](https://github.com/Shreyasramakrishna90/Carla-Safety-Evaluation/blob/master/textx-scenario-description/demo/scenario.entity) -- Has the entities of a CARLA scenarion. The entities are town name, weather, ego_agent, other_agent, global_route, and hazard_list.
+[Scenrio.entity](https://github.com/scope-lab-vu/Resonate/blob/main/scenario-description/scenario.entity) -- Has the entities of a CARLA scenarion. The entities are town name, weather, ego_agent, other_agent, global_route, and hazard_list.
 
-[entity.tx](https://github.com/Shreyasramakrishna90/Carla-Safety-Evaluation/blob/master/textx-scenario-description/demo/entity.tx) -- Has the grammer for the scenario description language. 
+[entity.tx](https://github.com/scope-lab-vu/Resonate/blob/main/scenario-description/entity.tx) -- Has the grammer for the scenario description language. 
 
-[scenario-generator.py](https://github.com/Shreyasramakrishna90/Carla-Safety-Evaluation/blob/master/demo/textx-scenario-description/scenario-parser.py) -- Parses the scenario language as python object and fills in the required values for each entity. Then an XML is generated that can be used in CARLA.
+[scenario-generator.py](https://github.com/scope-lab-vu/Resonate/blob/main/scenario-description/scenario-generator.py) -- Parses the scenario language as python object and fills in the required values for each entity. Then an XML is generated that can be used in CARLA.
 
-[sample-output.xml](https://github.com/Shreyasramakrishna90/Carla-Safety-Evaluation/blob/master/demo/textx-scenario-description/sample-output.xml) -- The sample xml file generated for CARLA. 
+[sample-output.xml](https://github.com/scope-lab-vu/Resonate/blob/main/scenario-description/sample-output.xml) -- The sample xml file generated for CARLA. 
 
 Scenario.dot, entity.dot -- metamodel figures of the scenario description and the textual language. Read the [docs](https://textx.github.io/textX/stable/) to convert it to png.
 
