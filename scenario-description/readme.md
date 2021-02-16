@@ -17,6 +17,6 @@ To generate scenes with different weather patterns, activate the virtual environ
 ```
 textx generate entity.tx --target dot
 textx generate scenario.entity --grammar entity.tx --target dot
-python3 scenario17.py 
+python3 scenario-generator.py 
 ```
 The scene generator takes a route xml file from the Carla AD challenge, and generates one simulation run by randomly samples the route with different weather patterns to generate different scenes. A sample simulation xml files are shown in [folder](https://github.com/Shreyasramakrishna90/Resonate-Dynamic-Risk/tree/main/resonate-carla/leaderboard/data/my_routes)
