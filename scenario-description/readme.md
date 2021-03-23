@@ -12,9 +12,10 @@ We use a scenario description DSML written in [textX](https://textx.github.io/te
 
 Scenario.dot, entity.dot -- metamodel figures of the scenario description and the textual language. Read the [docs](https://textx.github.io/textX/stable/) to convert it to png.
 
-To generate scenes with different weather patterns, activate the virtual environment using demo/bin/activate. Then run the following commands to generate different simulation scenarios.
+To generate scenes with different weather patterns, activate the virtual environment using source demo/bin/activate. Then run the following commands to generate different simulation scenarios.
 
 ```
+cd demo
 textx generate entity.tx --target dot
 textx generate scenario.entity --grammar entity.tx --target dot
 python3 scenario-generator.py 
