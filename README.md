@@ -12,6 +12,8 @@ Resonate estimated collision rate as the Autonomous Vehicle navigated through a 
 
 Additional videos of other scenes can be found in the [Video Folder](https://github.com/Shreyasramakrishna90/AV-Runtime-Risk/blob/main/videos/)
 
+The slides for this work can be found [here](https://github.com/scope-lab-vu/Resonate/blob/main/seams_slides.pdf) and a presentation video can be found on [youtube](https://www.youtube.com/watch?v=R25RxhwaH5o&ab_channel=VU-ALC)
+
 ## Installing the CARLA Autonomous Driving setup
 
 The ReSonAte framework implementation in CARLA is built on top of the CARLA AD example from [Learning By Cheating](https://github.com/bradyz/2020_CARLA_challenge). To run the CARLA AD setup with varied weather patterns and evaluate the AV's collision rate, clone this repo.
@@ -67,6 +69,17 @@ export TEAM_CONFIG=model.ckpt                               # change path to che
 export HAS_DISPLAY=1                                        # set to 0 if you don't want a debug window
 
 ./run_agent.sh
+```
+
+This paper can be cited as
+
+```
+@article{hartsell2021resonate,
+  title={ReSonAte: A Runtime Risk Assessment Framework for Autonomous Systems},
+  author={Hartsell, Charles and Ramakrishna, Shreyas and Dubey, Abhishek and Stojcsics, Daniel and Mahadevan, Nagabhushan and Karsai, Gabor},
+  journal={arXiv preprint arXiv:2102.09419},
+  year={2021}
+}
 ```
 
 # Acknowledgement 
