@@ -12,7 +12,7 @@ Resonate estimated collision rate as the Autonomous Vehicle navigated through a 
 
 Additional videos of other scenes can be found in the [Video Folder](https://github.com/Shreyasramakrishna90/AV-Runtime-Risk/blob/main/videos/)
 
-The slides for this work can be found [here](https://github.com/scope-lab-vu/Resonate/blob/main/seams_slides.pdf) and a presentation video can be found on [youtube](https://www.youtube.com/watch?v=R25RxhwaH5o&ab_channel=VU-ALC)
+The slides for this work can be found [here](https://github.com/scope-lab-vu/Resonate/blob/main/seams_slides.pdf) and a presentation video can be found on [YouTube](https://www.youtube.com/watch?v=R25RxhwaH5o&ab_channel=VU-ALC)
 
 ## Installing the CARLA Autonomous Driving setup
 
