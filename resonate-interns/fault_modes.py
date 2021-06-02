@@ -1,0 +1,62 @@
+import enum
+
+
+class FaultModes(enum.Enum):
+    """Enumeration of possible fault modes"""
+    NO_FAULT = -1
+    CENTER_CAM_BLUR = 0
+    LEFT_CAM_BLUR = 1
+    RIGHT_CAM_BLUR = 2
+    LEFT_RIGHT_CAM_BLUR = 3
+    CENTER_RIGHT_CAM_BLUR = 4
+    CENTER_LEFT_CAM_BLUR = 5
+    ALL_CAM_BLUR = 6
+    CENTER_CAM_OCCLUDE = 7
+    LEFT_CAM_OCCLUDE = 8
+    RIGHT_CAM_OCCLUDE = 9
+    LEFT_RIGHT_CAM_OCCLUDE = 10
+    CENTER_RIGHT_CAM_OCCLUDE = 11
+    CENTER_LEFT_CAM_OCCLUDE = 12
+    ALL_CAM_OCCLUDE = 13
+    RADAR_FAILURE = 14
+
+
+class SingularFaultModes(enum.Enum):
+    """Enumeration of possible fault modes"""
+    NO_FAULT = 0
+    CENTER_CAM_BLUR = 1
+    LEFT_CAM_BLUR = 2
+    RIGHT_CAM_BLUR = 3
+    CENTER_CAM_OCCLUDE = 4
+    LEFT_CAM_OCCLUDE = 5
+    RIGHT_CAM_OCCLUDE = 6
+    RADAR_FAILURE = 7
+
+
+def fault_mode_to_set(fault_mode):
+    FM = FaultModes
+    SFM = SingularFaultModes
+    map = {
+        FM.NO_FAULT: [SFM.NO_FAULT],
+        FM.CENTER_CAM_BLUR: [SFM.CENTER_CAM_BLUR],
+        FM.LEFT_CAM_BLUR: [SFM.LEFT_CAM_BLUR],
+        FM.RIGHT_CAM_BLUR: [SFM.RIGHT_CAM_BLUR],
+        FM.LEFT_RIGHT_CAM_BLUR: [SFM.LEFT_CAM_BLUR, SFM.RIGHT_CAM_BLUR],
+        FM.CENTER_RIGHT_CAM_BLUR: [SFM.CENTER_CAM_BLUR, SFM.RIGHT_CAM_BLUR],
+        FM.CENTER_LEFT_CAM_BLUR: [SFM.LEFT_CAM_BLUR, SFM.CENTER_CAM_BLUR],
+        FM.ALL_CAM_BLUR: [SFM.CENTER_CAM_BLUR, SFM.LEFT_CAM_BLUR, SFM.RIGHT_CAM_BLUR],
+        FM.CENTER_CAM_OCCLUDE: [SFM.CENTER_CAM_OCCLUDE],
+        FM.LEFT_CAM_OCCLUDE: [SFM.LEFT_CAM_OCCLUDE],
+        FM.RIGHT_CAM_OCCLUDE: [SFM.RIGHT_CAM_OCCLUDE],
+        FM.LEFT_RIGHT_CAM_OCCLUDE: [SFM.LEFT_CAM_OCCLUDE, SFM.RIGHT_CAM_OCCLUDE],
+        FM.CENTER_RIGHT_CAM_OCCLUDE: [SFM.CENTER_CAM_OCCLUDE, SFM.RIGHT_CAM_OCCLUDE],
+        FM.CENTER_LEFT_CAM_OCCLUDE: [SFM.CENTER_CAM_OCCLUDE, SFM.LEFT_CAM_OCCLUDE],
+        FM.ALL_CAM_OCCLUDE: [SFM.CENTER_CAM_OCCLUDE, SFM.LEFT_CAM_OCCLUDE, SFM.RIGHT_CAM_OCCLUDE],
+        FM.RADAR_FAILURE: [SFM.RADAR_FAILURE]
+    }
+
+    # If provided fault_mode is a standard integer, convert to FaultMode object first
+    if type(fault_mode) == int:
+        fault_mode = FM(fault_mode)
+
+    return map[fault_mode]

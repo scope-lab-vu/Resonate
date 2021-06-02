@@ -1,0 +1,4 @@
+# Don't store datasets
+evaluation_data/
+estimation_data/
+saved_images/
