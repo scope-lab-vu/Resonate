@@ -215,13 +215,19 @@ def plot_outcomes(datafiles):
     # Plot conditional probability P(B | AM) and adjusted probability P(B | AM) / P(B)
     fig = plt.figure(dpi=300)
     ax1 = fig.add_subplot(1, 1, 1)
-    ax1.scatter(average_am, top_occurred, label="Top Events")
+    # ax1.scatter(average_am, top_occurred, label="Top Events")
     # ax1.scatter(average_am, collision_occurred, label="Collision Events")
-    ax1.plot(x_range, y_sig_max_likelihood, label="Sigmoid MLE fit")
-    ax1.plot(x_range, y_sig_max_likelihood/avg_prob, label="Adjusted fit")
-    ax1.set_xlabel("Average AM Log Martingale")
-    ax1.set_ylabel("Outcome (True/False)")
+    ax1.plot(x_range, y_sig_max_likelihood, label="MLE fit")
+    # ax1.plot(x_range, y_sig_max_likelihood/avg_prob, label="Relative to baseline")
+    ax1.axhline(avg_prob, linestyle="-.", label="baseline", color="green")
+    # ax1.axhline(1.0, linestyle="--", color="purple")
+    # ax1.set_xlabel("Average AM Log Martingale")
+    # ax1.set_ylabel("Outcome (True/False)")
+    ax1.set_xlabel("Assurance Monitor output")
+    ax1.set_ylabel("Barrier Failure Probability")
+    ax1.set_title("P(B1) vs. Assurance Monitor output")
     ax1.legend(loc="best")
+    ax1.set_ylim([0.0, np.max(y_sig_max_likelihood/avg_prob) + 0.1])
     plt.show()
 
 
@@ -241,9 +247,9 @@ if __name__ == "__main__":
         df.calc_metrics()
         datafiles.append(df)
 
-    # # Plot each datafile
-    # for df in datafiles:
-    #     plot_data_file(df)
+    # Plot each datafile
+    for df in datafiles:
+        plot_data_file(df)
 
     calculate_statistics(datafiles)
     print("\n")

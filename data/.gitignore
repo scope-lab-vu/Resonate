@@ -1,0 +1,5 @@
+# Ignore everything in the data directory except for any gitignore and README files.
+**
+!.gitignore
+!README.md
+!*/
